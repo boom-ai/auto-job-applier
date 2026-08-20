@@ -1,0 +1,7 @@
+google-genai
+playwright
+pandas
+fpdf2
+python-dotenv
+beautifulsoup4
+streamlit

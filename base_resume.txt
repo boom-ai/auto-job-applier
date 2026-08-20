@@ -1,0 +1,81 @@
+Sanket Sharma
+Jalandhar, Punjab, India
++91-7973798820 — sanketsharma8083@gmail.com
+LinkedIn — GitHub
+
+Professional Summary
+Detail-oriented Analyst with experience in AI/LLM evaluation, data annotation, and quality assurance. Skilled in working with large datasets, following structured evaluation frameworks, and maintaining high accuracy standards. Proficient in Microsoft Excel, Power BI, and data visualization tools with a strong foundation in Python and software development. Strong analytical, problem-solving, and communication skills with the ability to work effectively in fast-paced environments.
+
+Core Competencies
+• Analytical Thinking
+• Quality Assurance
+• Data Validation
+• Reporting and Documentation
+• Attention to Detail
+• Problem Solving
+• Process Compliance
+• Time Management
+• Cross-Functional Collaboration
+• Communication Skills
+
+Professional Experience
+Analyst – AI/LLM Practice Dec 2025 – Present
+Innodata India Pvt. Ltd.
+• Evaluated AI-generated responses for factual accuracy, contextual relevance, safety compliance, and quality standards.
+• Performed structured data annotation and validation tasks to support Large Language Model (LLM) training initiatives.
+• Identified inconsistencies and quality issues by following detailed evaluation guidelines and established processes.
+• Collaborated with quality assurance teams to maintain accuracy, consistency, and adherence to project requirements.
+• Worked with large volumes of data while maintaining high attention to detail and productivity targets.
+• Contributed to process improvement initiatives through feedback and quality observations.
+
+Full Stack Developer Intern Jan 2025 – Jul 2025
+Future Finderz
+• Developed a complete e-commerce web application with authentication, product management, and order processing functionality.
+• Built responsive front-end interfaces using React, HTML, CSS, and JavaScript.
+• Developed backend APIs and integrated database functionality for efficient data management.
+• Collaborated with stakeholders to understand requirements and deliver user-focused solutions.
+
+Education
+Bachelor of Technology (B.Tech) – Information Technology
+DAV Institute of Engineering and Technology
+CGPA: 7.63 Oct 2021 – Jun 2025
+
+Technical Skills
+Programming Languages: Python, Kotlin, JavaScript, HTML, CSS
+Frameworks & Libraries: React, Django, Android SDK
+Data & Analytics: Microsoft Excel, Power BI, Tableau, Data Visualization
+AI & Data Operations: LLM Evaluation, Data Annotation, Prompt Engineering
+Databases: MongoDB, Room Database
+Tools & Platforms: Git, AWS, Android Studio
+
+Projects
+Sales Analytics Dashboard Power BI
+• Developed an interactive dashboard to analyze sales performance across multiple product categories.
+• Implemented filters, slicers, and drill-down views for detailed performance analysis.
+• Presented trends and business insights using data visualization techniques.
+
+Android Expense Calculator Kotlin, Room Database
+• Designed and developed an Android application to track daily expenses and category-wise budgets.
+• Implemented Room Database for offline-first data storage and management.
+• Added monthly summaries and visual charts to analyze spending patterns.
+
+Music Player Application Kotlin, Android SDK
+• Developed an offline music player supporting playlist management and playback controls.
+• Designed a responsive user interface following Material Design principles.
+• Optimized media handling for smooth audio playback.
+
+Certifications
+• Career Essentials in Generative AI – Microsoft & LinkedIn
+• Android Development in Kotlin – O7 Services
+• Ethics in the Age of Generative AI
+• Generative AI: The Evolution of Thoughtful Online Search
+
+Achievements
+• State-Level Chess Position Holder.
+• Represented school three times at District-Level Chess Competitions.
+• Core Organizing Committee Member for College Cultural Fest.
+
+Languages
+• English – Full Professional Proficiency
+• Hindi – Full Professional Proficiency
+• Punjabi – Professional Working Proficiency
