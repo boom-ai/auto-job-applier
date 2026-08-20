@@ -14,22 +14,24 @@ st.markdown("Automate your resume tailoring process with Playwright and Gemini!"
 
 with st.sidebar:
     st.header("Settings")
-    api_key = st.text_input("Gemini API Key", type="password")
+    api_key_input = st.text_input("Gemini API Key (Optional if hosted securely)", type="password", value=os.getenv("GEMINI_API_KEY", ""))
     
-    st.markdown("### Upload Files")
+    st.markdown("### Upload Files (Optional)")
+    st.caption("If you don't upload these, it will automatically use your default `base_resume.txt` and live Google Sheet!")
     resume_file = st.file_uploader("Upload Base Resume (.txt)", type=["txt"])
     jobs_file = st.file_uploader("Upload Jobs List (.csv)", type=["csv"])
 
 st.subheader("Process Applications")
 run_limit = st.number_input("How many jobs to process? (0 for all)", min_value=0, value=3)
 
+# Default Google Sheet URL
+SHEET_URL = "https://docs.google.com/spreadsheets/d/143rAI2kOfYtTjRkK4WABzlCkYKy8wsgMCfOmO0f3RYg/export?format=csv&gid=0"
+
 if st.button("Start Tailoring"):
+    api_key = api_key_input or os.getenv("GEMINI_API_KEY")
+    
     if not api_key:
-        st.error("Please enter your Gemini API Key in the sidebar.")
-    elif not resume_file:
-        st.error("Please upload your base resume (.txt).")
-    elif not jobs_file:
-        st.error("Please upload your jobs list (.csv).")
+        st.error("Please enter your Gemini API Key in the sidebar or set it as an Environment Variable in Render.")
     else:
         # 1. Initialize Gemini Client
         try:
@@ -39,10 +41,23 @@ if st.button("Start Tailoring"):
             st.stop()
             
         # 2. Read Base Resume
-        base_resume_text = resume_file.read().decode("utf-8")
+        if resume_file:
+            base_resume_text = resume_file.read().decode("utf-8")
+        else:
+            try:
+                with open("base_resume.txt", "r") as f:
+                    base_resume_text = f.read()
+            except FileNotFoundError:
+                st.error("Could not find `base_resume.txt` on the server. Please upload it in the sidebar.")
+                st.stop()
         
-        # 3. Save CSV temporarily so pandas can read it (or read directly)
-        jobs_df = pd.read_csv(jobs_file)
+        # 3. Read Jobs
+        if jobs_file:
+            jobs_df = pd.read_csv(jobs_file)
+        else:
+            with st.spinner("Fetching latest live Google Sheet..."):
+                jobs_df = pd.read_csv(SHEET_URL)
+                
         jobs = jobs_df.to_dict('records')
         
         total_jobs = len(jobs)
